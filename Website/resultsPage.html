@@ -11,15 +11,10 @@
         // Function to parse the URL and display the arguments
         function displayReceivedArguments() {
             const urlParams = new URLSearchParams(window.location.search);
-            const argumentsContainer = document.createElement('div');
 
-            for (const [key, value] of urlParams.entries()) {
-                const argumentElement = document.createElement('p');
-                argumentElement.innerText = `${key}: ${value}`;
-                argumentsContainer.appendChild(argumentElement);
-            }
+            value = urlParams.get("param1")
+            console.log(value);
 
-            document.body.appendChild(argumentsContainer);
         }
 
         // Call the displayReceivedArguments function when the page loads
