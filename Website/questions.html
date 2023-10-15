@@ -765,6 +765,24 @@
         // Event listener for when the connection is established
         socket.addEventListener('open', (event) => {
             console.log('WebSocket connection opened:', event);
+        });        
+
+        // Function to send a message to the WebSocket
+        function sendMessage() {
+            console.log(returnScore())
+            const messageToSend = returnScore().toString();
+            console.log('Sending message:', messageToSend);
+            socket.send(messageToSend);
+        }
+
+        // Event listener for when the connection is closed
+        socket.addEventListener('close', (event) => {
+            console.log('WebSocket connection closed:', event);
+        });
+
+        // Event listener for when an error occurs
+        socket.addEventListener('error', (event) => {
+            console.error('WebSocket error:', event);
         });
 
         // Event listener for when a message is received from the server
@@ -775,25 +793,31 @@
             // Save the received message to a variable or perform any desired action
             // For simplicity, we'll just log it to the console
             // You can replace this with code to save the message to a variable or update the DOM
+
+            // Define the base URL of the webpage you want to open
+            const baseUrl = 'resultsPage.html';
+
+            // Define the arguments as key-value pairs
+            const arguments = {
+                param1: receivedMessage
+            };
+
+            // Construct the URL with arguments
+            const urlWithArguments = constructUrlWithArguments(baseUrl, arguments);
+
+            // Open the webpage in a new window/tab
+            window.open(urlWithArguments, '_blank');
+
         });
 
-        // Event listener for when an error occurs
-        socket.addEventListener('error', (event) => {
-            console.error('WebSocket error:', event);
-        });
+        function constructUrlWithArguments(baseUrl, arguments) {
+            // Construct the query string with the arguments
+            const queryString = Object.keys(arguments).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(arguments[key])}`).join('&');
 
-        // Event listener for when the connection is closed
-        socket.addEventListener('close', (event) => {
-            console.log('WebSocket connection closed:', event);
-        });
-
-        // Function to send a message to the WebSocket
-        function sendMessage() {
-            console.log(returnScore())
-            const messageToSend = returnScore().toString();
-            console.log('Sending message:', messageToSend);
-            socket.send(messageToSend);
+            // Append the query string to the base URL
+            return `${baseUrl}?${queryString}`;
         }
+
     </script>
 
   </body>
