@@ -741,15 +741,19 @@
             if (res) {
                 result.push(res.value);
             } else {
-                result.push("0");
+                result.push(0);
             }
         }
 
         console.log(result);
 
-        while(result.length > 0) {
+        temp = JSON.parse('['+ JSON.stringify(result) + ']');
+
+        while (result.length > 0) {
             result.pop();
         }
+
+        return temp;
     }
   </script>
 
@@ -785,7 +789,8 @@
 
         // Function to send a message to the WebSocket
         function sendMessage() {
-            const messageToSend = "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]";
+            console.log(returnScore())
+            const messageToSend = returnScore().toString();
             console.log('Sending message:', messageToSend);
             socket.send(messageToSend);
         }
