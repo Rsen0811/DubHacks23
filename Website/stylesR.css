@@ -39,3 +39,24 @@ h1 {
   margin-bottom: 20px;
   margin-top: 5px;
 }
+
+#backBack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#backMain {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: larger;
+}
