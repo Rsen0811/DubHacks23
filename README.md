@@ -1,4 +1,4 @@
-# DubHacks23
+# DubHacks23 - ReJuve
 
 Our Goal:
 We at ReJuve aim to help you revitalize, rejuvenate, and reclaim your mental health through the power of information. You can now learn about better mental health habits at your own convenience. Take a diagnosis test now to see your score, it is your journey to mental wellness, inner peace, and spiritual balance.
