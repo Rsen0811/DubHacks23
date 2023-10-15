@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Messages</title>
+</head>
+<body>
+    <p id="message"></p>
+
+    <script>
+        // Define your array 'a'
+        const a = [5,5,5,5,5,5,5,5]; // You can set the values you want to check here
+
+        // Get the element where the message will be displayed
+        const messageElement = document.getElementById('message');
+        messageElement.innerHTML = '<h3>Rejuve Personalized</h3>';
+
+        // Define messages based on conditions
+        const messages = [
+            {
+                condition: a[0] >= 3,
+                text: 
+                    '<h4>Regretful</h4>' +
+                    '<p>Forgive Yourself - Accept your mistakes. Rather than punishing yourself for mistakes, treat yourself with the same kindness and forgiveness.</p>' +
+                    '<p>Take Action - Use those experiences to fuel future action. Instead of ruminating over what cannot be changed, reframe it as a learning opportunity that will allow you to make better choices in the future.</p>' 
+            },
+            {
+                condition: a[1] >= 3,
+                text: 
+                    '<h4>Hypochondriac</h4>' +
+                    '<p>Justify - Giving a clear and honest appraisal of the causes of concern. If you can\'t,</p>' +
+                    '<p>Medications - If you cannot control yourself to be a hypochondriac, make an appointment with a psychologist for medication prescription.</p>' 
+            },
+            {
+                condition: a[2] >= 3,
+                text: 
+                    '<h4>Moodswing</h4>' +
+                    '<p>Drink healthily - Avoiding alcohol, caffeine or any mood-altering substances.</p>' +
+                    '<p>Observe yourself - Keeping a journal to track your mood swings and what may have triggered them. Pay attention to what you eat and drink and how much sleep and exercise you are getting. Try to determine whether there may be a pattern.</p>'
+            },
+            {
+                condition: a[3] >= 3,
+                text: 
+                    '<h4>Anger</h4>' +
+                    '<p>Take a timeout - Give yourself short breaks during times of the day that tend to be stressful. A few moments of quiet time might help you feel better prepared to handle what\'s ahead without getting irritated or angry.</p>' +
+                    '<p>Use humor to release tension - Lightening up can help diffuse tension. Use humor to help you face what\'s making you angry and, possibly, any unrealistic expectations you have for how things should go. But avoid sarcasm.</p>' 
+            },
+            {
+                condition: a[4] >= 3,
+                text: 
+                    '<h4>Emotional negativity</h4>' +
+                    '<p>Past tense - Don`t blow things out of proportion by going over them time and again in your mind.</p>' +
+                    '<p>Try to be reasonable - Accept that bad feelings are occasionally unavoidable and think of ways to make yourself feel better.</p>'
+            },
+            {
+                condition: a[7] >= 3,
+                text: 
+                    '<h4>Loneliness</h4>' +
+                    '<p>Find peace in a busy world - If you are feeling disconnected to yourself try and get into nature. Whether that\'s noticing a houseplant, finding a little park or getting into a forest, Getting into nature can help you to feel at peace with yourself.</p>' +
+                    '<p>Express your emotions in a healthy way - Practice sitting with your emotions. Being present with your emotions. Reflecting and accepting your emotions. Connect to you. Journal, doodle, voice-memo and express yourself.</p>' 
+            },
+            {
+                condition: a[5] >= 3,
+                text: 
+                    '<h4>Happiness</h4>' +
+                    '<p>Congrats! You\'re doing a great job! Keep it up!</p>'
+            },
+            {
+                condition: a[6] >= 3,
+                text: 
+                    '<h4>Energy in life</h4>' +
+                    '<p>Congrats! You\'re doing a great job! Keep it up!</p>'                    
+            }
+        ];
+
+        // Display messages based on conditions
+        messages.forEach((item) => {
+            if (item.condition) {
+                messageElement.innerHTML += item.text;
+            }
+        });
+    // Add general advice
+        messageElement.innerHTML += '<h3>General Advice</h3>' +
+            '<h4>Take 30 minutes to go for a walk in nature</h4>' +
+            '<p>It could be a stroll through a park or a hike in the woods. Research shows that being in nature can increase energy levels, reduce depression, and boost well-being.</p>' +
+            '<h4>Do something with friends and family</h4>' +
+            '<p>Have a cookout, go to a park, or play a game. People are 12 times more likely to feel happy on days that they spend 6-7 hours with friends and family.</p>' +
+            '<h4>Spend some time with a furry friend</h4>' +
+            '<p>Be cautious of animal allergies!</p>' +
+            '<a href="https://www.forbes.com/advisor/pet-insurance/pet-care/emotional-support-animal/">Learn more about emotional support animal</a>'
+
+    // Add fun facts
+        messageElement.innerHTML += '<h3>Fun Facts</h3>' +
+            '<h4>Dance around while you do your housework/<h4>'+
+            '<p>not only will you get chores done, but dancing reduces levels of cortisol (the stress hormone), and increases endorphins (the body`s "feel-good" chemicals).</p>' +
+            '<h4>Relax in a warm bath once a week</h4>'+
+            '<p>Try adding Epsom salts to soothe aches and pains and help boost magnesium levels, which can be depleted by stress.</p>' +
+            '<h4>Try prepping your lunches or picking out your clothes for the work week</h4>'+
+            '<p>You\'ll save some time in the mornings and have a sense of control about the week ahead.</p>'
+    
+    // Add resouces / citation
+        messageElement.innerHTML += '<h4>Resources</h4>' +
+            '<a href="https://mhanational.org/31-tips-boost-your-mental-health">31 Tips to Boost Your Mental Health</a><br>' +
+            '<a href="https://www.verywellmind.com/how-to-cope-with-regret-5218665">How to Cope with Regret</a><br>' +
+            '<a href="https://www.mentalhealth.org.uk/our-work/public-engagement/unlock-loneliness/15-things-do-if-youre-feeling-lonely#:~:text=Try%20sharing%20how%20you%20feel,passive%20when%20using%20social%20media.">15 Things to Do If You`re Feeling Lonely</a><br>' +
+            '<a href="https://www.clearviewtreatment.com/resources/blog/whats-the-best-way-to-deal-with-mood-swings/">What`s the Best Way to Deal with Mood Swings?</a><br>' +
+            '<a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/anger-management/art-20045434">Anger Management - Mayo Clinic</a><br>'
+    </script>
+</body>
+</html>
