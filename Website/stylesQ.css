@@ -54,22 +54,62 @@ p {
   font-size: 15px;
   font-weight: 600;
   padding: 0 10px;
+  margin-bottom: 15px;
   cursor: pointer;
   outline: none;
+  font-size: larger;
 }
 
 #back {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #answer {
   text-decoration: none;
+  text-align: center;
 }
 
 h1 {
   text-align: center;
   text-decoration: underline;
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+#allQuiz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#quiz {
+  width:40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#rank {
+  width:40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+li {
+  font-size: large;
+  list-style-type: none;
+}
+
+#end {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }

@@ -1,3 +1,41 @@
 body {
-  background-color: bisque;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgb(52, 148, 91), rgb(199, 199, 127));
+  padding: 1rem;
+  background-size: 100% 100%;
+}
+
+#mainInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#resources, #funFacts, #sources {
+  width: 40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#generalAdvice {
+  width: 40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
