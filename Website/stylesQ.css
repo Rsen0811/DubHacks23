@@ -38,6 +38,7 @@ input[type="radio"] {
   background: teal;
   border-radius: 8px;
   margin-right: 5px;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 p {
@@ -58,6 +59,7 @@ p {
   cursor: pointer;
   outline: none;
   font-size: larger;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 #back {
@@ -74,10 +76,10 @@ p {
 
 h1 {
   text-align: center;
-  text-decoration: underline;
-  font-size: 35px;
+  font-size: 50px;
   margin-bottom: 0px;
   margin-top: 5px;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 #allQuiz {
@@ -85,6 +87,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 #quiz {
