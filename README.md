@@ -10,13 +10,13 @@ Our Methods:
 We utilized a series of K-Nearest Neighbor models to map the similarity between test subjects and the user to score them with the values that was most mathematically similar to them. The models came from the Scikit Learn library in Python. We then pushed each value into an array and printed different messages based on the scores for each category. We used Websockets to transfer the data from a backend Python server to use for the website. Our frontend was built with HTML and CSS, as well as JavaScript for the calculations and button functionality.
 
 
-                                                       _
-                                                     _(_)_                          wWWWw   _
-                                         @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
-                                        @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)
-                                         @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\
-                                          /      Y       \|    \|/    /(_)    \|      |/      |
-                                        \ |     \ |/       | / \ | /  \|/       |/    \|      \|/
-                                       \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|// 
-                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                      Hackers: Rajat Sengupta, Karson Shin, Megan Pham, Yuning Hu
+                 _
+               _(_)_                          wWWWw   _
+   @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
+  @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)
+   @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\
+    /      Y       \|    \|/    /(_)    \|      |/      |
+  \ |     \ |/       | / \ | /  \|/       |/    \|      \|/
+  \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|// 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Hackers: Rajat Sengupta, Karson Shin, Megan Pham, Yuning Hu
