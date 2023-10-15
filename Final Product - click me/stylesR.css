@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(rgb(52, 148, 91), rgb(199, 199, 127));
+  padding: 1rem;
+  background-size: 100% 100%;
+}
+
+#mainInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#resources, #funFacts, #sources {
+  width: 40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+#generalAdvice {
+  width: 40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+#backBack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+#backMain {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: larger;
+  font-family: 'Tilt Neon', sans-serif;
+
+}

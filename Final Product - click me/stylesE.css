@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(rgb(52, 148, 91), rgb(199, 199, 127));
+  padding: 1rem;
+  background-size: 100% 100%;
+  font-family: 'Tilt Neon', sans-serif;
+
+}
+
+#backMain {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: larger;
+  font-family: 'Tilt Neon', sans-serif;
+
+}

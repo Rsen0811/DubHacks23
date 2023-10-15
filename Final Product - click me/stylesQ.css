@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(rgb(52, 148, 91), rgb(199, 199, 127));
+  padding: 1rem;
+  background-size: 100% 100%;
+}
+.quiz, .choices {
+  list-style-type: none;
+  padding: 0;
+}
+.choices li {
+  margin-bottom: 5px;
+}
+.choices label {
+  display: flex;
+  align-items: center;
+}
+.choices label,
+input[type="radio"] {
+  cursor: pointer;
+}
+input[type="radio"] {
+  margin-right: 8px;
+}
+.view-results {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: inherit;
+  color: white;
+  background: teal;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+p {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+#backMain {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: larger;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#allQuiz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#quiz {
+  width:40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#rank {
+  width:40%;
+  border: solid black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+li {
+  font-size: large;
+  list-style-type: none;
+}
+
+#end {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
