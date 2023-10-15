@@ -1,6 +1,7 @@
 Please read requirements.txt
-Also make sure node_modules are avalible
 
-Make sure to click on server.py, to run the node server before acessing the website through main.html
+Make sure node_modules are available
 
-The server would technically be hosted online, but for demonstration purposes just use the python server
+Make sure to click on server.py, to run the node server before accessing the website through main.html
+
+The server would technically be hosted online, but for demonstration purposes, it is hosted on the python server
