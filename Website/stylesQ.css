@@ -8,11 +8,11 @@ html {
 }
 body {
   font-family: sans-serif;
+  background-image: linear-gradient(rgb(52, 148, 91), rgb(199, 199, 127));
   padding: 1rem;
-  background-color: #E8FEC4;
+  background-size: 100% 100%;
 }
-.quiz,
-.choices {
+.quiz, .choices {
   list-style-type: none;
   padding: 0;
 }
@@ -42,5 +42,34 @@ input[type="radio"] {
 
 p {
   font-size: 25px;
+  text-decoration: underline;
+}
+
+#backMain {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+#back {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#answer {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
   text-decoration: underline;
 }
