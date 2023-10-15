@@ -16,15 +16,21 @@
             <script>
                 // Function to parse the URL and display the arguments
                 var a = [];
-                function displayReceivedArguments() {
+                function displayReceivedArguments(a) {
                     const urlParams = new URLSearchParams(window.location.search);
-                    a = urlParams.get("param1");
-                    a = [5, 5, 5, 5, 5, 5, 5, 5]; //test code
+                    const vals = JSON.parse(urlParams.get("param1"));
+                    console.log(vals);
+                    for (let i = 0; i < vals.length; i++) {
+                        a.push(vals[i]);
+                    }
+                    
+                    //a = [5, 5, 5, 5, 5, 5, 5, 5]; //test code
 
                     console.log(a);
                 }
-
-                displayReceivedArguments();
+                
+                displayReceivedArguments(a);
+                console.log(a);
 
                 // Define your array 'a'
                 //const a = value; // You can set the values you want to check here
