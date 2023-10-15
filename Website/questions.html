@@ -756,7 +756,7 @@
     <button onclick="sendMessage()">Send Message</button>
 
     <script>
-        const socket = new WebSocket('localhost:6969');
+        const socket = new WebSocket('ws://localhost:6969');
 
         // Event listener for when the connection is established
         socket.addEventListener('open', (event) => {
@@ -785,7 +785,7 @@
 
         // Function to send a message to the WebSocket
         function sendMessage() {
-            const messageToSend = 'Hello, WebSocket!';
+            const messageToSend = "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]";
             console.log('Sending message:', messageToSend);
             socket.send(messageToSend);
         }
