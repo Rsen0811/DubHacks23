@@ -1,15 +1,20 @@
 body {
-  background-color: silver;
+  background-color: aquamarine;
 }
 
-h1 {
-  color: purple;
+img {
+  width: auto;
+  height: auto;
+  border: solid black 5px;
 }
 
-h2 {
-  color: pink;
-}
-
-p {
-  color: lavender;
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
 }
