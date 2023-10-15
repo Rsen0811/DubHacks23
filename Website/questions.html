@@ -10,8 +10,10 @@
   </head>
   <body>
     <h1>Welcome to the Diagnosis Test!</h1>
-    <p>Answer the questions as best you can:)</p>
-    <a href="main.html"><button>Or go back to the main page</button></a>
+    <section id="back">
+        <p id="answer">Answer the questions as best you can:)</p>
+        <a href="main.html"><button id="backMain">Or go back to the main page</button></a>
+    </section>
 
     <ul class="quiz">
       <li>
@@ -732,6 +734,8 @@
   <a href="results.html"><button class="view-results" onclick="returnScore()">View Results</button></a>
   <button class="view-results" onclick="returnScore()">Log Answers to Console</button>
 
+  <button onclick="sendMessage()">Send Message</button>
+
   <script>
     const result = [];
 
@@ -757,9 +761,8 @@
     }
   </script>
 
-    <button onclick="sendMessage()">Send Message</button>
+    }
 
-    <script>
         const socket = new WebSocket('ws://localhost:6969');
 
         // Event listener for when the connection is established
