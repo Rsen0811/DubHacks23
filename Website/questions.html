@@ -11,6 +11,7 @@
   <body>
     <h1>Welcome to the Diagnosis Test!</h1>
     <p>Answer the questions as best you can:)</p>
+    <a href="main.html"><button>Or go back to the main page</button></a>
 
     <ul class="quiz">
       <li>
@@ -728,24 +729,67 @@
     </ul>
   </ul>
 
-  <button class="view-results" onclick="returnScore()"><a href="results.html">View Results</a></button>
+  <a href="results.html"><button class="view-results" onclick="returnScore()">View Results</button></a>
+  <button class="view-results" onclick="returnScore()">Log Answers to Console</button>
 
   <script>
     const result = [];
 
-function returnScore() {
-    for (let i = 0; i <= 22; i++) {
-        const res = document.querySelector('input[name="question' + i + '"]:checked');
-        if (res) {
-            result.push(res.value);
-        } else {
-            result.push("0");
+    function returnScore() {
+        for (let i = 0; i <= 22; i++) {
+            const res = document.querySelector('input[name="question' + i + '"]:checked');
+            if (res) {
+                result.push(res.value);
+            } else {
+                result.push("0");
+            }
+        }
+
+        console.log(result);
+
+        while(result.length > 0) {
+            result.pop();
         }
     }
-
-    console.log(result);
-}
   </script>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <script>
+        const socket = new WebSocket('localhost:6969');
+
+        // Event listener for when the connection is established
+        socket.addEventListener('open', (event) => {
+            console.log('WebSocket connection opened:', event);
+        });
+
+        // Event listener for when a message is received from the server
+        socket.addEventListener('message', (event) => {
+            const receivedMessage = event.data;
+            console.log('Received message:', receivedMessage);
+
+            // Save the received message to a variable or perform any desired action
+            // For simplicity, we'll just log it to the console
+            // You can replace this with code to save the message to a variable or update the DOM
+        });
+
+        // Event listener for when an error occurs
+        socket.addEventListener('error', (event) => {
+            console.error('WebSocket error:', event);
+        });
+
+        // Event listener for when the connection is closed
+        socket.addEventListener('close', (event) => {
+            console.log('WebSocket connection closed:', event);
+        });
+
+        // Function to send a message to the WebSocket
+        function sendMessage() {
+            const messageToSend = 'Hello, WebSocket!';
+            console.log('Sending message:', messageToSend);
+            socket.send(messageToSend);
+        }
+    </script>
 
   </body>
 </html>
