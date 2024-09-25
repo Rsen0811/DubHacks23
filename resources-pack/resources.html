@@ -7,14 +7,11 @@
     <p id="message"></p>
 
     <script>
-        // Define your array 'a'
-        const a = [5,5,5,5,5,5,5,5]; // You can set the values you want to check here
+        const a = [5,5,5,5,5,5,5,5]; 
 
-        // Get the element where the message will be displayed
         const messageElement = document.getElementById('message');
         messageElement.innerHTML = '<h3>Rejuve Personalized</h3>';
 
-        // Define messages based on conditions
         const messages = [
             {
                 condition: a[0] >= 3,
@@ -72,13 +69,12 @@
             }
         ];
 
-        // Display messages based on conditions
         messages.forEach((item) => {
             if (item.condition) {
                 messageElement.innerHTML += item.text;
             }
         });
-    // Add general advice
+
         messageElement.innerHTML += '<h3>General Advice</h3>' +
             '<h4>Take 30 minutes to go for a walk in nature</h4>' +
             '<p>It could be a stroll through a park or a hike in the woods. Research shows that being in nature can increase energy levels, reduce depression, and boost well-being.</p>' +
@@ -88,7 +84,6 @@
             '<p>Be cautious of animal allergies!</p>' +
             '<a href="https://www.forbes.com/advisor/pet-insurance/pet-care/emotional-support-animal/">Learn more about emotional support animal</a>'
 
-    // Add fun facts
         messageElement.innerHTML += '<h3>Fun Facts</h3>' +
             '<h4>Dance around while you do your housework/<h4>'+
             '<p>not only will you get chores done, but dancing reduces levels of cortisol (the stress hormone), and increases endorphins (the body`s "feel-good" chemicals).</p>' +
@@ -97,7 +92,6 @@
             '<h4>Try prepping your lunches or picking out your clothes for the work week</h4>'+
             '<p>You\'ll save some time in the mornings and have a sense of control about the week ahead.</p>'
     
-    // Add resouces / citation
         messageElement.innerHTML += '<h4>Resources</h4>' +
             '<a href="https://mhanational.org/31-tips-boost-your-mental-health">31 Tips to Boost Your Mental Health</a><br>' +
             '<a href="https://www.verywellmind.com/how-to-cope-with-regret-5218665">How to Cope with Regret</a><br>' +
